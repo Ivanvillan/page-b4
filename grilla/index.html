@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      .col{
+        border: 1px solid blue;
+      }
+    </style>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- genera en el navegador un contenedor completamente responsive (container), container-fluid es igual pero ocupa por completo la pantalla -->
+    <div class="container" style="background: red;"> 
+      <!-- bootstrap se maneja al igual que grid-layout, con filas y columnas
+           cada vez que se quiera generar un nuevo objeto, se debe crear un row y dentro sus columnas para items.
+           cada fila tiene 12 columnas como maximo
+         -->
+      <div class="row">
+        <!-- las columnas se dividen el ancho equitativamente cada una, es decir si hay dos se van a repartir todo el espacio y si hay tres, etc
+             como en una fila entran 12 columnas, se pueden distribuir agregando tamaño que va a ocupar esa columna 
+             EJ: 3+9=12
+          si una columna suma mas de 12, pasaría abajo con el tamaño especificado por ej: 3 y 10, la de 10 pasaria abajo
+           -->
+        <div class="col-3">1</div>
+        <div class="col-9">2</div>
+      </div>
+      <div class="row">
+        <!-- entrando en la parte responsive, se pueden usar los breakpoint para generar esa flexibilidad -->
+        <div class="col-12 col-lg-3">1</div> <!-- cuando este en una pantalla grande va a ocupar 3 espacios de columna en la fila y cuando sea mas pequeño al tamaño "large" o mas grande que eso, va a pasar al valor de 12 espacios -->
+        <div class="col-12 col-lg-9">2</div>
+        <div class="col">3</div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
